@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+    <configSections>
+      <section name="basicAuth" type="KeyFob.BasicAuthenticationConfigurationSection" xdt:Transform="Remove" xdt:Locator="Match(name)" />
+    </configSections>
+    <basicAuth>
+      <credentials>
+        <add username="demo" password="demo" xdt:Transform="Remove" xdt:Locator="Match(name)" />
+      </credentials>
+    </basicAuth>
+  <system.webServer>
+    <modules>
+      <add name="KeyFobBasicAuthentication" type="KeyFob.BasicAuthenticationModule" xdt:Transform="Remove" xdt:Locator="Match(name)" />
+    </modules>
+  </system.webServer>
+</configuration>
